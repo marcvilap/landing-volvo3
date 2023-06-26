@@ -1,164 +1,231 @@
 <script lang="ts">
-	import video01 from '$lib/assets/videos/video.mp4'
-	import forlife01 from '$lib/assets/images/forlife01.jpg'
-	import forlife02 from '$lib/assets/images/forlife02.jpg'
-	import forlife03 from '$lib/assets/images/forlife03.jpg'
-	import forlife04 from '$lib/assets/images/forlife04.jpg'
-	import forlife05 from '$lib/assets/images/forlife05.jpg'
-
-	import circle01 from '$lib/assets/images/circle01.svg'
+	import ia01 from '$lib/assets/images/ia01.jpg'
+	import ia02 from '$lib/assets/images/ia02.jpg'
+	import ia03 from '$lib/assets/images/ia03.jpg'
+	import ia04 from '$lib/assets/images/ia04.jpg'
+	import ia05 from '$lib/assets/images/ia05.jpg'
+	import ia06 from '$lib/assets/images/ia06.jpg'
+	import ia07 from '$lib/assets/images/ia07.jpg'
+	import ia08 from '$lib/assets/images/ia08.jpg'
+	import ia09 from '$lib/assets/images/ia09.jpg'
+	import ia10 from '$lib/assets/images/ia10.jpg'
+	import ia11 from '$lib/assets/images/ia11.jpg'
+	import ia12 from '$lib/assets/images/ia12.jpg'
+	import ia13 from '$lib/assets/images/ia13.jpg'
+	import ia14 from '$lib/assets/images/ia14.jpg'
+	import ia15 from '$lib/assets/images/ia15.jpg'
+	import ia16 from '$lib/assets/images/ia16.jpg'
+	import circle03 from '$lib/assets/images/circle03.png'
 	import Intersection from '$lib/components/Intersection.svelte'
 	import BlockHero from '$lib/components/BlockHero.svelte'
 	import BlockTextBanner from '$lib/components/BlockTextBanner.svelte'
-	import BlockFeature from '$lib/components/BlockFeature.svelte'
-	import BlockImages from '$lib/components/BlockImages.svelte'
+	import BlockHalf from '$lib/components/BlockHalf.svelte'
 	import BlockCircle from '$lib/components/BlockCircle.svelte'
 	import BlockNav from '$lib/components/BlockNav.svelte'
 	let intersection01 = false
+	let intersection02 = false
+	let intersection03 = false
+	let intersection04 = false
+	let intersection05 = false
+	let intersection06 = false
 </script>
 
 <svelte:head>
 	<style>
 		body {
-			background: #057c76;
-			color: #fff;
+			background: #e0f3fd;
 		}
 	</style>
 </svelte:head>
 
 <main class="overflow-hidden">
 	<BlockHero
-		video={video01}
-		text1="Nuevo posicionamiento ‘For Life’"
-		text2="10 inventos que nos recuerdan que la seguridad es sinónimo de libertad"
-		text3=""
-		text4="Seguridad es un concepto que abarca muchas áreas, desde las medidas que tomamos cada día para evitar males mayores hasta aspectos tan cotidianos como los semáforos en las calles o el cinturón de seguridad. Tecnologías con las que ahora mismo sería impensable vivir."
+		image={ia01}
+		text1="Inteligencia Artificial"
+		text2="¿Cómo se usa la Inteligencia Artificial en la movilidad?"
+		text3="Tres tecnologías de la IA que van a salvar vidas (y a mejorarlas)"
+		text4="Los avances en tecnología, especialmente en áreas como la inteligencia artificial o las redes neuronales, están redibujando el paisaje de la movilidad en los últimos años a una velocidad inusitada."
 	/>
 
 	<div class="py-24">
-		<Intersection bind:intersecting={intersection01} class="container">
+		<div class="container">
+			<Intersection bind:intersecting={intersection01}>
+				<div
+					class="prose prose-capitalize mx-auto max-w-xl transition duration-1000"
+					class:opacity-0={!intersection01}
+					class:translate-y-24={!intersection01}
+				>
+					<p>
+						La transición hacia el coche eléctrico acapara titulares en la actualidad, pero solo es la punta de lanza de
+						una serie de innovaciones pensadas para transformar. Esto incluye no solo la experiencia a bordo de un
+						coche, sino incluso los procesos de compra, la manera en que trabajan las líneas de producción o las <strong
+							>aplicaciones para el transporte</strong
+						>. Y <a target="_blank" href="/">Volvo Cars</a> es experto en cada una de estas etapas.
+					</p>
+					<p>
+						En la actualidad se están probando avances para poder cargar los coches de manera inalámbrica, una
+						tecnología que también se utiliza de manera satisfactoria para <a target="_blank" href="/"
+							>actualizar el software</a
+						> que mueve a los vehículos.
+					</p>
+				</div>
+			</Intersection>
+			<Intersection class="mx-auto mt-24 max-w-3xl" bind:intersecting={intersection02}>
+				<img
+					class="w-full transition duration-1000"
+					class:opacity-0={!intersection02}
+					class:scale-50={!intersection02}
+					src={ia02}
+					loading="lazy"
+					decoding="async"
+					alt=""
+				/>
+			</Intersection>
+		</div>
+	</div>
+
+	<BlockTextBanner
+		image={ia03}
+		text="Que un coche se parezca cada vez más a un ordenador implica que la industria del automóvil puede también acceder a innovaciones que antes parecían reservadas al ámbito informático"
+	/>
+
+	<Intersection bind:intersecting={intersection03} class="container mt-24">
+		<p
+			class="mx-auto max-w-xl transition duration-1000"
+			class:opacity-0={!intersection03}
+			class:translate-y-24={!intersection03}
+		>
+			Con la inteligencia artificial en el centro de un acalorado debate acerca de sus usos, aplicaciones y límites,
+			repasamos los usos que esta tecnología ofrece a la industria y <strong
+				>cómo va a ayudar a moldear el sector a medio y largo plazo</strong
+			>.
+		</p>
+	</Intersection>
+
+	<BlockHalf image1={ia04} image2={ia05} title="Un diseñador virtual que genera coches más sostenibles" invert>
+		<p>
+			Pongámonos en el cuerpo de un fabricante de automóviles que quiere diseñar un nuevo vehículo y quiere que sus
+			formas tengan un impacto en la resistencia que el coche opone al aire para, así, ahorrar combustible. En el
+			pasado, un equipo de diseñadores trabajaba el tiempo que hiciera falta para visualizar y trazar nuevas ideas sobre
+			el papel, <strong>un primer paso se puede agilizar gracias a una inteligencia artificial</strong> a la que se le haya
+			enseñado previamente, a base de alimentarla con imágenes de automóviles ya existentes.
+		</p>
+		<p>
+			El resultado de este proceso, que apenas puede tardar unos minutos, son una serie de propuestas sobre las que el
+			equipo de diseño puede comenzar a trabajar e iterar. Añadir inteligencia artificial a esas propuestas iniciales
+			permite obtener un número ingente de ideas a las que se pueden añadir ligeras variaciones sobre las formas de
+			diferentes piezas (guardabarros, alerones) para producir modelos sobre los que, ahora sí, pueden trabajar los
+			diseñadores.
+		</p>
+	</BlockHalf>
+
+	<div class="relative flex min-h-screen items-center py-24 text-white">
+		<img class="absolute left-0 top-0 h-full w-full object-cover" src={ia06} loading="lazy" decoding="async" alt="" />
+		<Intersection bind:intersecting={intersection04} class="container relative">
+			<p
+				class="max-w-xs transition duration-1000"
+				class:opacity-0={!intersection04}
+				class:translate-y-24={!intersection04}
+			>
+				Es en este punto donde entra el <strong>factor humano</strong> para unir forma y función y lograr un resultado
+				que sea atractivo a los ojos y que también sea <strong>eficiente en términos energéticos</strong>. Por el
+				camino, la inteligencia artificial le ha ahorrado a la empresa un buen pellizco económico y ha liberado a los
+				diseñadores de tareas repetitivas en la mesa de trabajo.
+			</p>
+		</Intersection>
+	</div>
+
+	<BlockHalf image1={ia07} image2={ia08} title="Coches que salvan vidas mientras te llevan por la autovía" invert>
+		<p>
+			La seguridad a bordo es una de las principales preocupaciones que tienen en cuenta los conductores a la hora de
+			comprar un vehículo, así como el impacto ambiental. En los últimos años, <strong
+				>fabricantes como Volvo Cars ofrecen <a target="_blank" href="/">medidas cada vez más completas</a> para el día a
+				día en la carretera</strong
+			>: alianzas climáticas, cámaras, sensores, LIDARs unidos a computación en la nube y herramientas de inteligencia
+			artificial permiten a algunos vehículos leer lo que sucede en el asfalto en tiempo real y anticiparse a futuros
+			problemas.
+		</p>
+	</BlockHalf>
+
+	<BlockTextBanner
+		image={ia09}
+		text="Ya existen soluciones para que un vehículo pueda tomar el control en determinadas situaciones para evitar a otro conductor que invade nuestro carril u otro que ha frenado en seco enfrente nuestro"
+	/>
+
+	<BlockHalf image1={ia10} image2={ia11}>
+		<p>
+			Todavía estamos lejos de la conducción autónoma total, pero ya existen en el mercado opciones que permiten ceder
+			al vehículo cierto control de las operaciones. <strong
+				>El uso de tecnología permite circular por autovía acorde a los límites de velocidad</strong
+			>, siempre por los carriles adecuados y ejecutando las maniobras necesarias para sortear el tráfico. Y todo ello
+			sin que el conductor tenga que pisar un pedal o controlar el volante aunque siempre se recomienda que con la vista
+			y la atención puestas en la carretera por si es necesario tomar el control en cualquier momento.
+		</p>
+		<p>
+			No está de más recordar que ya contamos con herramientas en la palma de nuestra mano que nos permiten calcular las
+			mejores rutas en tiempo real teniendo en cuenta factores como el tráfico, posibles accidentes u obras en la
+			carretera.
+		</p>
+	</BlockHalf>
+
+	<BlockCircle image={circle03} />
+
+	<BlockHalf image1={ia12} image2={ia13} title="Conducción autónoma para el sector industrial" invert>
+		<p>
+			Hoy en día ya disfrutamos de cierto grado de autonomía en la conducción, aunque todavía estamos lejos del nivel 5,
+			ese que permitirá entregar el control al vehículo. Algunas firmas trabajan en llevar esa autonomía a sectores
+			industriales, de manera que la implantación de estas tecnologías potencie la <strong
+				>seguridad, productividad y sostenibilidad de la actividad industrial</strong
+			>.
+		</p>
+		<p>
+			Es el caso de Volvo Cars, firma cuyas soluciones se pueden implantar en tres etapas diferentes del proceso
+			productivo. Una de ellas está dirigida a la extracción minera, ya que aplica conducción autónoma para transportar
+			materias primas, reduce emisiones y aumenta la seguridad laboral ya que elimina el factor humano de la ecuación.
+			En el sector logístico, esta tecnología pretende eliminar cuellos de botella mediante la conducción autónoma de
+			camiones o la instalación de infraestructura adaptada para estas tecnologías.
+		</p>
+	</BlockHalf>
+
+	<BlockTextBanner
+		image={ia14}
+		text="El transporte de mercancías también se beneficia de la automatización, ya que permite un transporte por carretera durante las 24 horas mientras los conductores pueden encargarse de rutas más cercanas a su hogar sin tener que conducir durante jornadas maratonianas"
+	/>
+
+	<div class="py-24">
+		<Intersection bind:intersecting={intersection05} class="container grid items-center gap-y-24 md:grid-cols-2">
 			<div
-				class="prose prose-dark mx-auto max-w-xl transition duration-1000"
-				class:opacity-0={!intersection01}
-				class:translate-y-24={!intersection01}
+				class="transition duration-1000 md:pr-8 xl:pr-24"
+				class:opacity-0={!intersection05}
+				class:-translate-x-24={!intersection05}
 			>
 				<p>
-					Esa seguridad juega un papel fundamental en nuestras vidas y en nuestro bienestar mental, y Volvo Cars lo
-					sabe. Por esta razón, acaba de lanzar
-					<a target="_blank" href="https://tecvolucion.com/for-life-conducir-seguro-vivir-seguro/">For Life</a>, su
-					nuevo posicionamiento en el que nos recuerda, como empresa que durante casi un siglo ha estado volcado en
-					protegernos en la carretera, que no hay mayor definición de libertad que aquella que va de la mano de la nueva
-					era de seguridad. Porque
-					<strong>sin seguridad (en nuestra salud, bienestar o economía) no hay progreso, ni libertad.</strong>
+					No obstante, hay que puntualizar que todas las firmas deben adaptarse a la legislación vigente de cada país,
+					de la cual depende fundamentalmente el desarrollo de esta área. Desde 2022, todos los modelos que se
+					encuentren equipados con los <strong>sistemas y la tecnología de nivel 3 son legales en Europa</strong>, una
+					modificación que desde Naciones Unidas pretenden extender a nivel internacional.
 				</p>
-				<p>
-					Incluso al montar en un coche podemos sentir esa sensación de seguridad. El simple gesto de abrocharse el
-					cinturón implica que un desplazamiento debería ser simplemente eso: moverse de un punto A a un punto B sin
-					mayores imprevistos.
-				</p>
+			</div>
+			<div class="transition duration-1000" class:opacity-0={!intersection05} class:translate-x-24={!intersection05}>
+				<img class="w-full" src={ia15} loading="lazy" decoding="async" alt="" />
 			</div>
 		</Intersection>
 	</div>
 
-	<BlockTextBanner
-		image={forlife01}
-		text="Volvo Cars acaba de lanzar For Life, su nuevo posicionamiento en el que nos recuerda que no hay mayor definición de libertad que aquella que va de la mano de la nueva era de seguridad"
-	/>
-
-	<div class="relative pt-24">
-		<div class="container">
-			<p class="mx-auto max-w-xl">
-				Con el lema ¿y si sentirte seguro te hiciese sentir verdaderamente libre? Volvo Cars nos invita a una nueva era
-				de seguridad para todos, para disfrutar de la libertad más segura. Así fue como empezaron siendo los pioneros
-				con el cinturón de seguridad antaño, continuaron innovando en la protección de las personas en el presente, y
-				piensan en el futuro con el objetivo de colisiones cero y una conducción autónoma.
+	<div class="relative flex min-h-[32rem] items-center py-24 text-center text-white">
+		<img class="absolute left-0 top-0 h-full w-full object-cover" src={ia16} loading="lazy" decoding="async" alt="" />
+		<Intersection bind:intersecting={intersection06} class="container relative">
+			<p
+				class="mx-auto max-w-lg transition duration-1000"
+				class:opacity-0={!intersection06}
+				class:translate-y-24={!intersection06}
+			>
+				Inteligencia artificial, automatización de procesos, eficiencia, sostenibilidad y seguridad son algunos de los
+				conceptos que van a definir muchos sectores industriales en las próximas décadas. El automóvil no es una
+				excepción y la implantación actual de estas tecnologías demuestra no solo que el cambio es imparable sino que,
+				además, va a tener un impacto desde el primer día.
 			</p>
-
-			<div class="pb-24" />
-
-			<BlockCircle image={circle01} color="#F8EBC0" />
-
-			<div class="pb-24" />
-
-			<p class="mx-auto mb-24 max-w-xl text-xl font-bold">
-				Para hacer homenaje a For Life, la nueva plataforma de Volvo Cars, repasamos algunos de los avances de la
-				humanidad que han contribuido a este presente en el que la nueva era de seguridad es sinónimo de libertad.
-			</p>
-
-			<BlockImages image1={forlife02} image2={forlife03} />
-
-			<BlockFeature
-				number="1"
-				title="Penicilina"
-				description="Aunque existen ejemplos en la historia antigua, fue Alexander Fleming el catalizador de una serie de investigaciones durante las primeras décadas del siglo XX que cristalizaron en el compuesto que daría pie a los primeros antibióticos y que dispararon la esperanza de vida del ser humano."
-			/>
-			<BlockFeature
-				right
-				number="2"
-				title="Bombillas"
-				description="Un invento tan sencillo ha cambiado para siempre nuestra relación con la noche. La bombilla nos ha permitido iluminar casas, calles y carreteras, haciendo más segura la vida nocturna y permitiendo los desplazamientos por las carreteras cuando el sol ya se ha puesto."
-			/>
-			<BlockFeature
-				number="3"
-				title="Cinturón de seguridad de tres puntos"
-				description="Ideado por Nils Bohlin en 1959, se le considera responsable de haber salvado más de un millón de vidas en las carreteras.<a rel='sponsored' target='_blank' href='https://www.volvocars.com/es/v/safety/highlights?utm_source=other&utm_medium=referral&utm_content=lifestyle_tracking_1x1_cinturon-seguridad&utm_campaign=es_lifestyle_awareness_2303_masterbrand_other_branded-content&sourceapplicationinformation=es_lst_awr_mbr&utm_id=362481354&dclid=CPbmyYnbuP4CFd4RBgAdGwEJYw'><u>El cinturón de seguridad</u></a> mantiene al pasajero de un vehículo a motor sujetado a su asiento, de manera que evita que salga disparado del habitáculo o se golpee contra otros elementos de su interior, protegiéndole de impactos que podrían ser mortales."
-			/>
-			<BlockFeature
-				right
-				number="4"
-				title="Airbag"
-				description="Existen colisiones tan fuertes para los que incluso un cinturón de seguridad no es suficiente. Es aquí donde entran en juego los airbags, una tecnología tan sencilla como una bolsa que se llena de aire cuando el vehículo detecta una colisión, y que ha añadido un plus de seguridad dentro de los vehículos."
-			/>
-			<BlockFeature
-				number="5"
-				title="Vacunas"
-				description="La pandemia del Covid-19 nos ha recordado la importancia de las vacunas, no solo para salvar vidas sino para vivirlas con total normalidad. Los primeros ejemplos datan de finales del siglo XVIII (la de la viruela) y todos parten de un mismo principio: generar inmunidad contra una enfermedad mediante la estimulación de la producción de anticuerpos."
-			/>
-			<BlockImages image1={forlife04} image2={forlife05} />
-			<BlockFeature
-				right
-				number="6"
-				title="Alarma anti incendios"
-				description="Un buen detector de humo es capaz de significar la diferencia entre apagar a tiempo un fuego o ver arrasada una propiedad. El primer ejemplo data de 1902 y en la actualidad son capaces de detectar gases y humos invisibles para el ser humano además de otros que sí son perceptibles a simple vista."
-			/>
-			<BlockFeature
-				number="7"
-				title="Semáforo"
-				description="Estos sistemas para controlar el tráfico se comenzaron a utilizar en Londres en la segunda mitad del siglo XIX. La adopción masiva de los coches los convirtió en una herramienta indispensable de las ciudades tanto para ordenar el tráfico como para garantizar la <a href='https://www.volvocars.com/es/for-life/?utm_source=other&utm_medium=referral&utm_content=lifestyle_tracking_1x1_for-life&utm_campaign=es_lifestyle_awareness_2303_masterbrand_other_branded-content&sourceapplicationinformation=es_lst_awr_mbr&utm_id=362480976&dclid=CIqG9PXcuP4CFdTZ1Qodv74FpQ' target='_blank' rel='sponsored'><u> segura convivencia</u></a> entre vehículos y peatones."
-			/>
-			<BlockFeature
-				right
-				number="8"
-				title="CASCO"
-				description="Ya sea en la construcción, escalando una montaña, encima de una bicicleta, montando un patinete o desplazándote en motocicleta, esta sencilla estructura se encarga de proteger nuestro órgano más preciado: el cerebro."
-			/>
-			<BlockFeature
-				number="9"
-				title="Chaleco salvavidas"
-				description="Este objeto cumple una sola función, mantener a flote a la persona que lo lleva, incluso si está inconsciente, de manera que su cabeza queda siempre por encima del agua y así evita que se ahogue. Imprescindibles en embarcaciones, ya sean de recreo o grandes cruceros."
-			/>
-			<BlockFeature
-				right
-				number="10"
-				title="Detectores de fatiga"
-				description="La última tecnología a bordo de los coches es capaz de detectar cuando un conductor se queda dormido al volante o está a punto de hacerlo. Y cuando eso sucede, el vehículo emite señales de alarma para informar al conductor de que su conducción está siendo errática y que necesita tomarse un descanso."
-			/>
-		</div>
-
-		<div class="absolute left-0 top-[62rem] flex items-center max-md:hidden">
-			<span class="w-14 border-t-4 border-white" />
-			<span class="relative h-5 w-5 rounded-full bg-white">
-				<span class="absolute inset-0 animate-ping rounded-full bg-white" />
-			</span>
-		</div>
-
-		<div class="absolute right-0 top-[76rem] flex items-center max-md:hidden">
-			<span class="relative h-5 w-5 rounded-full bg-white">
-				<span class="absolute inset-0 animate-ping rounded-full bg-white" />
-			</span>
-			<span class="w-14 border-t-4 border-white" />
-		</div>
+		</Intersection>
 	</div>
-
 	<BlockNav />
 </main>

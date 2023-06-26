@@ -86,7 +86,7 @@
 .prose p {
 	@apply mb-6;
 }
-.prose p:first-child::first-letter {
+.prose-capitalize p:first-child::first-letter {
 	@apply float-left -mt-2 mr-4 text-9xl font-bold leading-[.9] text-[#07AAA2] md:text-[12rem];
 }
 
