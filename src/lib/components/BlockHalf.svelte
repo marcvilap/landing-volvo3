@@ -16,7 +16,7 @@
 			class:translate-x-24={!intersecting && invert}
 			class:-translate-x-24={!intersecting && !invert}
 		>
-			<h3 class="mb-8 font-display text-3xl">{title}</h3>
+			<h3 class="mb-8 font-display text-3xl">{@html title}</h3>
 			<div class="prose">
 				<slot />
 			</div>

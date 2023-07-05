@@ -13,7 +13,7 @@
 			class:opacity-0={!intersecting}
 			class:translate-y-24={!intersecting}
 		>
-			{text}
+			{@html text}
 		</h3>
 	</Intersection>
 </div>

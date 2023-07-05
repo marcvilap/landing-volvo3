@@ -61,21 +61,14 @@
 						coche, sino incluso los procesos de compra, la manera en que trabajan las líneas de producción o las <strong
 							>aplicaciones para el transporte</strong
 						>. Y
-						<a
-							target="_blank"
-							rel="sponsored"
-							href="https://www.media.volvocars.com/global/en-gb/media/pressreleases/295720/volvo-cars-tests-new-wireless-charging-technology"
+						<a target="_blank" rel="sponsored" href="https://ad.doubleclick.net/ddm/clk/561637283;371095440;j"
 							>Volvo Cars</a
 						> es experto en cada una de estas etapas.
 					</p>
 					<p>
 						En la actualidad se están probando avances para poder cargar los coches de manera inalámbrica, una
-						tecnología que también se utiliza de manera satisfactoria para <a
-							target="_blank"
-							rel="sponsored"
-							href="https://www.volvocars.com/es/news/innovation/20230110-actualizaciones-inalambricas/"
-							>actualizar el software</a
-						> que mueve a los vehículos.
+						tecnología que también se utiliza de manera satisfactoria para actualizar el software que mueve a los
+						vehículos.
 					</p>
 				</div>
 			</Intersection>
@@ -95,7 +88,7 @@
 
 	<BlockTextBanner
 		image={ia03}
-		text="Que un coche se parezca cada vez más a un ordenador implica que la industria del automóvil puede también acceder a innovaciones que antes parecían reservadas al ámbito informático"
+		text="Que un coche se parezca cada vez más a un ordenador implica que la industria del automóvil puede también <a class='underline' rel='sponsored' target='_blank' href='https://ad.doubleclick.net/ddm/clk/561626030;371095443;a'>acceder a innovaciones</a> que antes parecían reservadas al ámbito informático"
 	/>
 
 	<Intersection bind:intersecting={intersection03} class="container mt-24">
@@ -111,7 +104,12 @@
 		</p>
 	</Intersection>
 
-	<BlockHalf image1={ia04} image2={ia05} title="Un diseñador virtual que genera coches más sostenibles" invert>
+	<BlockHalf
+		image1={ia04}
+		image2={ia05}
+		title="Un diseñador virtual que genera coches <a class='underline' href='https://www.volvocars.com/es/cars/ex30-electric/interior-design/' target='_blank' rel='sponsored'>más sostenibles</a>"
+		invert
+	>
 		<p>
 			Pongámonos en el cuerpo de un fabricante de automóviles que quiere diseñar un nuevo vehículo y quiere que sus
 			formas tengan un impacto en la resistencia que el coche opone al aire para, así, ahorrar combustible. En el
@@ -151,8 +149,7 @@
 				>fabricantes como Volvo Cars ofrecen <a
 					target="_blank"
 					rel="sponsored"
-					href="https://www.media.volvocars.com/global/en-gb/media/pressreleases/307926/volvo-cars-becomes-founding-member-of-accelerating-to-zero-coalition-calls-for-more-climate-action-f"
-					>medidas cada vez más completas</a
+					href="https://ad.doubleclick.net/ddm/clk/561778222;371095449;r">medidas cada vez más completas</a
 				> para el día a día en la carretera</strong
 			>: alianzas climáticas, cámaras, sensores, LIDARs unidos a computación en la nube y herramientas de inteligencia
 			artificial permiten a algunos vehículos leer lo que sucede en el asfalto en tiempo real y anticiparse a futuros
@@ -162,7 +159,7 @@
 
 	<BlockTextBanner
 		image={ia09}
-		text="Ya existen soluciones para que un vehículo pueda tomar el control en determinadas situaciones para evitar a otro conductor que invade nuestro carril u otro que ha frenado en seco enfrente nuestro"
+		text="<a href='https://ad.doubleclick.net/ddm/clk/561778231;371095455;o' class='underline' target='_blank' rel='sponsored'>Ya existen soluciones</a> para que un vehículo pueda tomar el control en determinadas situaciones para evitar a otro conductor que invade nuestro carril u otro que ha frenado en seco enfrente nuestro"
 	/>
 
 	<BlockHalf image1={ia10} image2={ia11}>
@@ -188,7 +185,12 @@
 			Hoy en día ya disfrutamos de cierto grado de autonomía en la conducción, aunque todavía estamos lejos del nivel 5,
 			ese que permitirá entregar el control al vehículo. Algunas firmas trabajan en llevar esa autonomía a sectores
 			industriales, de manera que la implantación de estas tecnologías potencie la <strong
-				>seguridad, productividad y sostenibilidad de la actividad industrial</strong
+				>seguridad, <a
+					class="underline"
+					rel="sponsored"
+					target="_blank"
+					href="https://ad.doubleclick.net/ddm/clk/561633980;371095452;m">productividad</a
+				> y sostenibilidad de la actividad industrial</strong
 			>.
 		</p>
 		<p>
