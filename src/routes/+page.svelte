@@ -194,16 +194,11 @@
 			>.
 		</p>
 		<p>
-			Es el caso de Volvo Cars, firma cuyas soluciones se pueden implantar en <a
-				href="https://www.volvoautonomoussolutions.com/en-en/"
-				rel="sponsored"
-				target="_blank"
-			>
-				tres etapas diferentes del proceso productivo.</a
-			> Una de ellas está dirigida a la extracción minera, ya que aplica conducción autónoma para transportar materias primas,
-			reduce emisiones y aumenta la seguridad laboral ya que elimina el factor humano de la ecuación. En el sector logístico,
-			esta tecnología pretende eliminar cuellos de botella mediante la conducción autónoma de camiones o la instalación de
-			infraestructura adaptada para estas tecnologías.
+			Es el caso de Volvo Cars, firma cuyas soluciones se pueden implantar en tres etapas diferentes del proceso
+			productivo.Una de ellas está dirigida a la extracción minera, ya que aplica conducción autónoma para transportar
+			materias primas, reduce emisiones y aumenta la seguridad laboral ya que elimina el factor humano de la ecuación.
+			En el sector logístico, esta tecnología pretende eliminar cuellos de botella mediante la conducción autónoma de
+			camiones o la instalación de infraestructura adaptada para estas tecnologías.
 		</p>
 	</BlockHalf>
 
