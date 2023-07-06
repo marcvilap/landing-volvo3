@@ -107,7 +107,7 @@
 	<BlockHalf
 		image1={ia04}
 		image2={ia05}
-		title="Un diseñador virtual que genera coches <a class='underline' href='https://www.volvocars.com/es/cars/ex30-electric/interior-design/' target='_blank' rel='sponsored'>más sostenibles</a>"
+		title="Un diseñador virtual que genera coches <a class='underline' href='https://ad.doubleclick.net/ddm/clk/561627842;371095446;p' target='_blank' rel='sponsored'>más sostenibles</a>"
 		invert
 	>
 		<p>
