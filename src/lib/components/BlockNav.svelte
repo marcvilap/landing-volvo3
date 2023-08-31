@@ -6,7 +6,7 @@
 	import circle01 from '$lib/assets/images/circle01.svg'
 	import circle02 from '$lib/assets/images/circle02.svg'
 	import circle03 from '$lib/assets/images/circle03.png'
-	import circle04 from '$lib/assets/images/circle04.png'
+	import circle04 from '$lib/assets/images/circle04.svg'
 	let theSwiper: HTMLDivElement
 	let swiper: Swiper
 	onMount(() => {
